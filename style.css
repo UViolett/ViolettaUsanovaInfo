@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto|Roboto+Slab');
+
+    {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1400px;
+    min-width: 900px;
+    min-height: 100%;
+    margin: 0 auto;
+    font-family: 'Comfortaa', cursive;
+}
+
+#main {
+    text-align: center;
+    font-size: large;
+    color: #6b3e26;
+}
+
+#wr-tabs {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#wr-tabs .tabs {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#wr-tabs .tabs .tab {
+    float: left;
+    cursor: pointer;
+    border: 1px solid pink;
+    padding: 10px;
+    background-color: #fdf5c9;
+    width: 16%;
+    color: #6b3e26;
+}
+
+#wr-tabs .tabs .tab:last-child {
+    border-right: none;
+}
+
+#wr-tabs .tabs .tab.active {
+    background-color: #ffcb85;
+    color: #6b3e26;
+    font-size: large;
+    font-weight: bolder;
+}
+
+#wr-tabs .tabs .tab:hover {
+    font-size: large;
+    font-weight: bolder;
+}
+
+#wr-tabs .content {
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#wr-tabs .content .tab-cont {
+    display: none;
+    padding: 15px;
+    background-color: #fdf5c9;
+    min-height: 500px;
+}
+
+#wr-tabs .content .tab-cont.active {
+    display: block;
+    background-color: #ffcb85;
+}
+
+#wr-tabs .content .tab-cont.about_me,
+#wr-tabs .tabs .tab.about_me {
+    background-color: #ffc5d9;
+}
+
+#wr-tabs .content .tab-cont.about_me > a {
+    text-decoration: none;
+    color: #6b3e26;
+}
